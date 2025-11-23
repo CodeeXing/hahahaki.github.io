@@ -1,123 +1,72 @@
 ---
 layout: default
+title: Home
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Welcome to My Portfolio
 
-[Link to another page](./another-page.html).
+Hello! I'm Hahahaki, a passionate developer focused on creating innovative solutions and sharing knowledge through technology.
 
-There should be whitespace between paragraphs.
+## About Me
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+I'm a software developer with expertise in web development, open-source contributions, and continuous learning. This website serves as a hub for my projects, blog posts, and professional journey.
 
-# Header 1
+## Skills & Technologies
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### Programming Languages
+- **JavaScript/TypeScript** - Modern web development
+- **Python** - Data science and automation
+- **Ruby** - Web applications and scripting
+- **HTML/CSS** - Responsive web design
 
-## Header 2
+### Frameworks & Tools
+- React, Vue.js, Node.js
+- Jekyll, GitHub Pages
+- Git, Docker, CI/CD
+- RESTful APIs, GraphQL
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+### Areas of Interest
+- Full-stack web development
+- Open-source software
+- Developer tools and productivity
+- Technical writing and documentation
 
-### Header 3
+## Featured Projects
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+### Project One
+A comprehensive web application built with modern technologies, featuring real-time updates and responsive design.
+[View Project](./projects.html#project-one)
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+### Project Two
+An open-source library that simplifies complex workflows and improves developer productivity.
+[View Project](./projects.html#project-two)
 
-#### Header 4
+### Project Three
+A data visualization tool that transforms raw data into meaningful insights through interactive charts.
+[View Project](./projects.html#project-three)
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+[View All Projects →](./projects.html)
 
-##### Header 5
+## Recent Blog Posts
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+Stay tuned for articles about web development, programming best practices, and technology insights.
 
-###### Header 6
+[Visit My Blog →](./blog.html)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+## Get In Touch
 
-### There's a horizontal rule below this.
+I'm always interested in new opportunities, collaborations, and conversations about technology.
 
-* * *
+- **GitHub**: [github.com/hahahaki](https://github.com/hahahaki)
+- **Email**: contact@example.com
 
-### Here is an unordered list:
+[Contact Me →](./contact.html)
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+---
 
-### And an ordered list:
+## Quick Links
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+- [About Me](./about.html) - Learn more about my background and experience
+- [Projects](./projects.html) - Explore my portfolio of work
+- [Blog](./blog.html) - Read my latest articles and thoughts
+- [Contact](./contact.html) - Get in touch with me
