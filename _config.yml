@@ -1,9 +1,61 @@
-title: Tactile theme
-description: Tactile is a theme for GitHub Pages.
-show_downloads: true
+title: Hahahaki's Portfolio
+description: Personal website and portfolio showcasing projects, blog posts, and professional experience.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-tactile
-url: "http://hahahaki.github.io/" 
+url: "https://hahahaki.github.io"
+baseurl: ""
 remote_theme: pages-themes/tactile@v0.2.0
+
+# Author information
+author:
+  name: Hahahaki
+  email: contact@example.com
+  github: hahahaki
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Contact
+    url: /contact
+
+# Social media links
+social:
+  github: https://github.com/hahahaki
+  linkedin: https://linkedin.com/in/yourprofile
+  twitter: https://twitter.com/yourhandle
+
+# Blog settings
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Plugins
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - script
+  - LICENSE
+  - jekyll-theme-tactile.gemspec
