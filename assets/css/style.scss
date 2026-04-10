@@ -1,4 +1,194 @@
 ---
 ---
 
-@import "jekyll-theme-tactile";
+/* Minimal academic layout for Cheng Xing's personal site. */
+
+:root {
+  --text:        #1a1a1a;
+  --muted:       #5a5a5a;
+  --accent:      #8b0000; /* deep crimson */
+  --rule:        #e2e2e2;
+  --bg:          #ffffff;
+  --code-bg:     #f6f6f6;
+  --max-width:   760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               Helvetica, Arial, "Liberation Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+a:hover { border-bottom-color: var(--accent); }
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+/* --- Header / nav --- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2rem;
+}
+
+.site-title a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: none;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.site-nav a {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.site-nav li.active a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+/* --- Main content --- */
+.site-main h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+.site-main h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.6rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-main h3 {
+  font-size: 1.05rem;
+  margin: 1.4rem 0 0.4rem;
+  color: var(--text);
+}
+.site-main p { margin: 0.8rem 0; }
+.site-main ul, .site-main ol { padding-left: 1.25rem; }
+.site-main li { margin: 0.25rem 0; }
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* Profile photo */
+.profile {
+  float: right;
+  width: 160px;
+  height: 160px;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f0f0f0;
+  border: 1px solid var(--rule);
+}
+
+/* Publications list with hanging indent */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  counter-reset: pub;
+}
+.pub-list li {
+  counter-increment: pub;
+  position: relative;
+  padding-left: 2.25rem;
+  margin: 1rem 0;
+  font-size: 0.96rem;
+}
+.pub-list li::before {
+  content: "[" counter(pub) "]";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.pub-list .venue { font-style: italic; }
+.pub-list .authors .me { font-weight: 600; }
+
+/* Awards / news entries */
+.entry {
+  margin: 0.9rem 0;
+}
+.entry .meta {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+code, pre {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  background: var(--code-bg);
+  border-radius: 3px;
+}
+code { padding: 0.1em 0.35em; font-size: 0.92em; }
+pre  { padding: 0.75rem 1rem; overflow-x: auto; }
+
+/* --- Footer --- */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .page { padding: 1.5rem 1rem 2rem; }
+  .profile {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 140px;
+    height: 140px;
+  }
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Print --- */
+@media print {
+  .site-nav, .site-footer { display: none; }
+  body { font-size: 12pt; color: #000; }
+  a { color: #000; border-bottom: none; }
+  .page { max-width: none; padding: 0; }
+}

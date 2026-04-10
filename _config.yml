@@ -1,9 +1,28 @@
-title: Tactile theme
-description: Tactile is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-tactile
-url: "http://hahahaki.github.io/" 
-remote_theme: pages-themes/tactile@v0.2.0
+title: "Cheng Xing"
+description: "Ph.D. Candidate, Molecular Genetics · University of Toronto · Bader Lab"
+author: "Cheng Xing"
+url: "https://hahahaki.github.io"
+lang: en-US
+
+# No remote theme — this site ships a hand-written layout and CSS.
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-seo-tag
+
+# Suppress tactile-theme relics.
+show_downloads: false
+
+# Navigation used by the custom layout.
+nav:
+  - title: Home
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Teaching & News
+    url: /teaching/
+
+# Contact info surfaced on the homepage.
+# TODO: replace placeholders below with real values.
+contact:
+  email: "TODO@example.com"
+  scholar: "https://scholar.google.com/citations?user=TODO"
+  linkedin: "https://www.linkedin.com/in/TODO/"
