@@ -1,123 +1,66 @@
 ---
 layout: default
+title: Cheng Xing
+permalink: /
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+<!-- TODO: replace /assets/images/profile.jpg with your actual photo. -->
+<img class="profile" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Cheng Xing">
 
-[Link to another page](./another-page.html).
+# Cheng Xing
 
-There should be whitespace between paragraphs.
+<p class="subtitle">
+Ph.D. Candidate, Molecular Genetics<br>
+University of Toronto · Bader Lab
+</p>
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## About
 
-# Header 1
+I am a Ph.D. Candidate in the Department of Molecular Genetics (Computational
+Biology stream) at the Temerty Faculty of Medicine, University of Toronto,
+based at the Donnelly Centre for Cellular and Biomolecular Research. I am a
+member of the [Bader Lab](https://baderlab.org/) under the supervision of
+Dr. Gary D. Bader.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Before Toronto, I completed my B.Sc. in Nanoscience at the University of
+Waterloo, with a minor in Computer Science.
 
-## Header 2
+## Research
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+My research develops deep-learning methods for volume electron microscopy
+(vEM) to map human tissue at nanoscale resolution. My Ph.D. project focuses
+on automated segmentation of human liver vEM data and the discovery of
+nanoscale organelle interactions.
 
-### Header 3
+- **Electron microscopy segmentation.** I developed
+  [**RETINA**](https://doi.org/10.1371/journal.pcbi.1013115), a
+  reconstruction-based hybrid deep-learning model that achieves
+  state-of-the-art accuracy on mitochondria and multi-organelle
+  segmentation in the CEM500K benchmark.
+- **Human liver vEM mapping.** Using high-performance computing, I process
+  large-scale human liver biopsy vEM datasets that capture rich subcellular
+  structure at nanometer resolution, and perform 3D reconstruction of
+  mitochondrial distribution and interaction patterns at the single-organelle
+  level.
+- **Mitochondria–ER ultrastructure.** I identify mitochondrial subclusters
+  and characterize their interaction profiles with the endoplasmic reticulum,
+  linking ultrastructural features to mitochondrial fission and fusion
+  dynamics.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+Prior to my Ph.D., I worked on computational modeling of peptide-based drug
+delivery (molecular docking and molecular dynamics of peptide–anthocyanin
+systems) and on machine-learning analysis of polarimetric microscopy data
+for retinal protein biomarkers in neurodegenerative disease.
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## Education
 
-#### Header 4
+- **Ph.D. in Molecular Genetics**, University of Toronto — *Sept 2023 – Present*<br>
+  Computational Biology, Temerty Faculty of Medicine · Donnelly Centre · Bader Lab
+- **B.Sc. in Nanoscience**, University of Waterloo — *Sept 2019 – May 2023*<br>
+  Faculty of Science · Minor in Computer Science
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## Contact
 
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+- Email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+- [Google Scholar]({{ site.contact.scholar }})
+- [LinkedIn]({{ site.contact.linkedin }})
