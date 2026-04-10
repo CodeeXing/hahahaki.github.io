@@ -21,8 +21,7 @@ nav:
     url: /teaching/
 
 # Contact info surfaced on the homepage.
-# TODO: replace placeholders below with real values.
 contact:
-  email: "TODO@example.com"
-  scholar: "https://scholar.google.com/citations?user=TODO"
-  linkedin: "https://www.linkedin.com/in/TODO/"
+  email: "cheng.xing@mail.utoronto.ca"
+  scholar: "https://scholar.google.com/citations?user=vv1WAH0AAAAJ&hl=en"
+  linkedin: "https://www.linkedin.com/in/cheng-xing-89b99326a/"
