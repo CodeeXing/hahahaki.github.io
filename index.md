@@ -4,8 +4,7 @@ title: Cheng Xing
 permalink: /
 ---
 
-<!-- TODO: replace /assets/images/profile.jpg with your actual photo. -->
-<img class="profile" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Cheng Xing">
+<img class="profile" src="{{ '/assets/images/ChenXing.png' | relative_url }}" alt="Cheng Xing">
 
 # Cheng Xing
 
